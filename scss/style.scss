@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://db.onlinewebfonts.com/c/287a99eeca9e0e12030e79954d92d6fd?family=Soho+Gothic+Pro+Light');
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+@import 'base';
+
+@media only screen and (min-width: 991px) {
+body,html {
+    height: $fs;
+}
+i{ @include transform(rotate(30deg)); }
+.container-left{
+  width:20%;
+  height:$fs;
+  box-shadow: 0 0 30px #000;
+  -webkit-box-shadow: 0 0 50px #000;
+  float: left;
+  position: relative;
+  z-index: 2000;
+}
+.container-right{
+width: 80%;
+float: left;
+height: $fs;
+}
+.navbar-brand{
+  font-family:$soho;
+  font-size: 47.63px !important;
+  color: #364048;
+  &:hover{
+      color: #364048 !important;
+    }
+  }
+#navbarNav{
+  width: $fs;
+}
+.navbar-nav {
+    width: $fs;
+    margin-top: -38px;
+    .active{
+      background: #26b2b0;
+    }
+  li {
+text-align: right;
+background-image: linear-gradient(to bottom, #333B3F 0%, #2E363A $fs);
+margin-bottom: 1px;
+  a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: $font-stack;
+    color:$primary-color !important;
+    padding:16px !important;
+  }
+  &:hover{
+    background: #26b2b0;
+  }
+}
+}
+.social {
+    padding:30px 0;
+  .copy-right{
+    width: $fs;
+    color:#6b7072;
+    font-size:12px;
+    font-family: $font-stack;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+ul{
+  margin-bottom:15px;
+
+  li{
+    margin-right: 5px;
+  }
+}
+}
+.scroll-box{
+  width: $fs;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: $fs;
+  ul,ol,li
+  {
+list-style: none;
+padding: 0;
+margin: 0;
+ }
+}
+.scroll-row {
+  height: 540px;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0;
+}
+.scroll-col {
+  width:  705px;
+  height: 270px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.tile-sm {
+    flex: 1 1 49%;
+    height: 270px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center!important;
+  div{
+    width: $fs;
+    height: $fs;
+    .overlay{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $fs;
+  width: $fs;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #28b4b2;
+  text-align: center;
+  font-family: $font-stack;
+  font-weight: 300;
+  color: #fff;
+  padding: 20px;
+  h6{
+font-size: 20.84px;
+  }
+  span{
+    font-size: 10.42px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+  p {
+    a{
+      color: #fff;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+    }
+  }
+    }
+    &:hover.overlay {
+  opacity: .8;
+}
+}
+}
+.tile-lg {
+    flex: 1 1 $fs;
+    height: 540px;
+    background: #e3e3e3;
+    font-family: $font-stack;
+    color: #6b7072;
+    padding:200px 55px 184px 62px;
+  h1{
+    font-weight: 300;
+    font-size: 66px;
+  }
+  p{
+    font-size: 18px;
+
+  }
+}
+.sticky-tile{
+  position:fixed;
+  width: 705px;
+  z-index: 1000;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #8df8f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #148e8c;
+}
+}
